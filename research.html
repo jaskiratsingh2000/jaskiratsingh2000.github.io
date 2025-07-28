@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaskirat Singh - Personal Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+    <script src="https://kit.fontawesome.com/5efdcbb395.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <header class="site-header-wrapper">
+      <div class="container">
+        <div class="site-header">
+          <div class="social-links">
+            <a href="mailto:juskirat2000@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://scholar.google.com/citations?user=3iaKHscAAAAJ&hl=en" title="Google Scholar"><i class="ai ai-google-scholar-square"></i></a>
+            <a href="https://github.com/jaskiratsingh2000" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jaskiratsingh2000" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/jaskirat626" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="assets/CV/JS_CV.pdf" class="cv-link" title="CV">CV</a>
+          </div>
+
+          <button class="hamburger-menu" aria-label="Toggle Menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+
+          <nav class="main-nav">
+            <ul>
+              <li><a href="about.html">about</a></li>
+              <li><a href="research.html"class="active">research</a></li>
+              <li><a href="publication.html">publications</a></li>
+              <li><a href="open_source.html">open source</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <main>
+        <section id="research-intro">
+          <h1>research</h1>
+          <p class="page-subtitle">
+            Brief descriptions on what I am working on and what interests me!
+          </p>
+          <p class="page-subtitle">(Last Updated: July 2025)</p>
+          <p>
+
+I  deeply believe in the value of collaborative research 🤝. Throughout my journey so far, I’ve been fortunate to work with supportive mentors and incredible collaborators who have enriched my experience and broadened my perspective 🌟. I’m truly grateful for their guidance and the opportunities they’ve provided, as none of these projects would have been possible without their contributions! 🙏 I’m passionate about sharing ideas and receiving feedback, so if you have any thoughts or comments about my current projects, I would love to set up a quick call to discuss them ☕. Engaging in meaningful conversations not only helps refine my work but also fosters a sense of community in our field 🤗. Let’s connect and explore new possibilities together! 🚀
+          </p>
+        </section>
+
+
+        <section id="current-work">
+            <h3 id="broad-interests">
+              What am I working on right now?
+            </h3>
+            <p>
+              Broadly, my research interests lie at the intersection of machine learning and robotics. My work aims to enable embodied agents like autonomous aerial and ground vehicles to solve complex tasks in unstructured, real-world environments, particularly those that require close interaction with humans and other dynamic elements. To this end, I am focused on two primary directions:
+            </p>
+            
+            <ul>
+              <li>
+                <p><strong>How can we create a holistic worldview for autonomous agents by unifying perception and planning?</strong>
+                Traditionally, perception (interpreting sensor data) and planning (deciding on a course of action) are treated as separate research problems. This can lead to complex system architectures and cause errors to propagate across modules, limiting how well agents can adapt to new situations. I am working on <i>developing unified frameworks that integrate these modules to be optimized as a single unit</i> which will allow agents to act on a more complete understanding of their environment, improving their scalability and adaptability in uncertain and decentralized scenarios.</p>
+              </li>
+              <li>
+                <p><strong>How can multiple robots collaborate and coordinate safely and efficiently?</strong>
+                While multi-agent systems are capable of solving large-scale problems that are intractable for single agents, achieving effective collaboration and coordination remains a significant challenge. Techniques that work for a single agent often don't translate directly to multi-agent scenarios. My research focuses on <i>developing methods to manage complex interaction dynamics, allowing teams of robots to adapt to uncertain situations and make collective decisions. I work on building models that leverage domain knowledge, real-world data, and high-fidelity simulators</i> to overcome challenges like constrained communication and system heterogeneity, especially for cooperative tasks in dense, shared spaces.</p>
+              </li>
+            </ul>
+
+          </section>
+      </main>
+    </div>
+    
+    </div> <footer>
+      <p>&copy; Copyright 2025 Jaskirat Singh.</p>
+    </footer>
+
+    <script>
+      const hamburgerButton = document.querySelector(".hamburger-menu");
+      const navigation = document.querySelector(".main-nav");
+      hamburgerButton.addEventListener("click", () => {
+        navigation.classList.toggle("is-open");
+      });
+    </script>
+  </body>
+</html>

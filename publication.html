@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaskirat Singh - Personal Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css">
+    <script src="https://kit.fontawesome.com/5efdcbb395.js" crossorigin="anonymous"></script>
+
+    <style>
+        .publication-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .publication-item {
+            display: flex;
+            gap: 25px;
+            padding: 25px 0;
+            border-bottom: 1px solid #eee; /* Simple separator */
+        }
+        
+        .publication-item:last-child {
+            border-bottom: none; /* Remove border on the last item */
+        }
+
+        /* This rule ensures all publication images have the same dimensions */
+        .publication-image img {
+            width: 200px;      /* Sets a fixed width */
+            height: 140px;     /* Sets a fixed height */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 6px;
+        }
+        
+        .publication-details {
+            flex: 1;
+        }
+
+        .publication-details h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.0em;
+        }
+
+        .publication-details .authors {
+            margin-bottom: 8px;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        
+        .publication-details .venue {
+            margin-bottom: 16px;
+            font-size: 0.9em;
+            font-style: italic;
+            color: #666;
+        }
+        
+        .publication-links a {
+            font-size: 0.9em;
+            font-weight: 500;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 6px 12px;
+            margin-right: 10px;
+            color: #b03a70;
+            transition: all 0.2s ease;
+        }
+
+        .publication-links a:hover {
+            background-color: #f5f5f5;
+            border-color: #ccc;
+            text-decoration: none;
+            color: #b03a70;
+        }
+
+        .name {
+            color: #d35400
+        }
+
+        @media (max-width: 768px) {
+            .publication-item {
+                flex-direction: column;
+            }
+            .publication-image img {
+                width: 100%;
+                height: auto; /* Allow height to adjust on mobile */
+            }
+        }
+    </style>
+
+  </head>
+  <body>
+    <header class="site-header-wrapper">
+      <div class="container">
+        <div class="site-header">
+          <div class="social-links">
+            <a href="mailto:juskirat2000@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://scholar.google.com/citations?user=3iaKHscAAAAJ&hl=en" title="Google Scholar"><i class="ai ai-google-scholar-square"></i></a>
+            <a href="https://github.com/jaskiratsingh2000" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jaskiratsingh2000" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/jaskirat626" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="assets/CV/JS_CV.pdf" class="cv-link" title="CV">CV</a>
+          </div>
+
+          <button class="hamburger-menu" aria-label="Toggle Menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="about.html">about</a></li>
+              <li><a href="research.html">research</a></li>
+              <li><a href="publication.html"class="active">publications</a></li>
+              <li><a href="open_source.html">open source</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <main>
+        <section>
+          <h1>publications</h1>
+          <p class="page-subtitle">My research contributions in robotics and machine learning.</p>
+          <p class="page-subtitle">* indicates that authors contributed equally</p>
+        </section>
+
+        <ul class="publication-list">
+            
+          <li class="publication-item">
+              <div class="publication-image">
+                  <img src="assets/images/panda.png" alt="PANDA Framework Diagram">
+              </div>
+              <div class="publication-details">
+                  <h3>PANDA: Priority-based collision avoidance framework for heterogeneous uavs navigating in dense airspace</h3>
+                  <p class="authors">Agamdeep Singh*, <strong class="name">Jaskirat Singh</strong>*, and P.B. Sujit</p>
+                  <p class="venue">International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2025</p>
+                  <div class="publication-links">
+                      <a href="assets/papers/panda_paper.pdf">PDF</a>
+                      <a href="https://github.com/jaskiratsingh2000/Research-PANDA">Code</a>
+                      <a href="https://jaskiratsingh2000.github.io/Research-PANDA/">Project Page</a>
+                      <a href="https://dl.acm.org/doi/10.5555/3709347.3744000">Link</a>
+                  </div>
+              </div>
+          </li>
+
+
+          <li class="publication-item">
+              <div class="publication-image">
+                  <img src="assets/images/rhfsafeuav.png" alt="Safe UAV Landing Diagram">
+              </div>
+              <div class="publication-details">
+                  <h3>RHFSafeUAV: Real-time heuristic framework for safe landing of uavs in dynamic scenarios</h3>
+                  <p class="authors"><strong class="name">Jaskirat Singh</strong>, Neel Adwani, Harikumar Kandath, and K. Madhava Krishna</p>
+                  <p class="venue">International Conference on Unmanned Aircraft Systems (ICUAS), 2023</p>
+                  <div class="publication-links">
+                      <a href="assets/papers/rhfsafeuav_paper.pdf">PDF</a>
+                      <a href="https://github.com/jaskiratsingh2000/Research-UAVs-Safe-Landings">Code</a>
+                      <a href="https://rhfsafeuav.github.io/">Project Page</a>
+                      <a href="https://ieeexplore.ieee.org/document/10156604">Link</a>
+                  </div>
+              </div>
+          </li>
+
+          <li class="publication-item">
+              <div class="publication-image">
+                  <img src="assets/images/uvrsabi.gif" alt="UAV-based building inspection">
+              </div>
+              <div class="publication-details">
+                  <h3>Uav-based visual remote sensing for automated building inspection</h3>
+                  <p class="authors">Kushagra Srivastava, Dhruv Patel, Aditya Kumar Jha, Mohhit Kumar Jha, <strong class="name">Jaskirat Singh</strong>, Ravi Kiran Sarvadevabhatla, Pradeep Kumar Ramancharla, Harikumar Kandath, and K. Madhava Krishna</p>
+                  <p class="venue">European Conference on Computer Vision (ECCV) - CVCIE Workshop, 2022</p>
+                  <div class="publication-links">
+                      <a href="assets/papers/uvrsabi_paper.pdf">PDF</a>
+                      <a href="https://github.com/UVRSABI/UVRSABI-Code">Code</a>
+                      <a href="https://uvrsabi.github.io/">Project Page</a>
+                      <a href="https://dl.acm.org/doi/10.1007/978-3-031-25082-8_20">Link</a>
+                  </div>
+              </div>
+          </li>
+        </ul>
+      </main>
+    </div>
+
+    </div> <footer>
+      <p>&copy; Copyright 2025 Jaskirat Singh.</p>
+    </footer>
+
+    <script>
+      const hamburgerButton = document.querySelector(".hamburger-menu");
+      const navigation = document.querySelector(".main-nav");
+      hamburgerButton.addEventListener("click", () => {
+        navigation.classList.toggle("is-open");
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+
+<style>
+        .publication-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .publication-item {
+            display: flex;
+            gap: 25px;
+            padding: 25px 0;
+            border-bottom: 1px solid #eee; /* Simple separator */
+        }
+        
+        .publication-item:last-child {
+            border-bottom: none; /* Remove border on the last item */
+        }
+
+        /* This rule ensures all publication images have the same dimensions */
+        .publication-image img {
+            width: 200px;      /* Sets a fixed width */
+            height: 140px;     /* Sets a fixed height */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 6px;
+        }
+        
+        .publication-details {
+            flex: 1;
+        }
+
+        .publication-details h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.0em;
+        }
+
+        .publication-details .authors {
+            margin-bottom: 8px;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+        
+        .publication-details .venue {
+            margin-bottom: 16px;
+            font-size: 0.9em;
+            font-style: italic;
+            color: #666;
+        }
+        
+        .publication-links a {
+            font-size: 0.9em;
+            font-weight: 500;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 6px 12px;
+            margin-right: 10px;
+            color: #b03a70;
+            transition: all 0.2s ease;
+        }
+
+        .publication-links a:hover {
+            background-color: #f5f5f5;
+            border-color: #ccc;
+            text-decoration: none;
+            color: #b03a70;
+        }
+
+        .name {
+            color: #d35400
+        }
+
+        @media (max-width: 768px) {
+            .publication-item {
+                flex-direction: column;
+            }
+            .publication-image img {
+                width: 100%;
+                height: auto; /* Allow height to adjust on mobile */
+            }
+        }
+    </style>
